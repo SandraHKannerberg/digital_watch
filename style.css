@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap');
 
 * {
     padding: 0;
@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: aquamarine;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Exo 2', sans-serif;
 }
 
 
@@ -46,6 +46,7 @@ body {
     display: flex;
     padding: 0 21px;
     position: relative;
+
 }
 
 .clock .clock-body::before{
@@ -70,11 +71,13 @@ body {
     border-radius: 0 0 5px 5px;
 }
 
-.clock .clock-body>div {
+.clock .clock-body {
     color: #69ff74;
-    font-size: 45px;
-    line-height: 1.2;
+    font-size: 60px;
     letter-spacing: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
