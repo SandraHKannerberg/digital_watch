@@ -6,7 +6,7 @@ const weekday = document.querySelector(".weekday");
 
 const weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
-function showWeekday() {
+function showDate() {
     const d = new Date();
     let dayWeekday = weekdays[d.getDay()];
     let dayDate = d.getDate();
@@ -18,7 +18,7 @@ function showWeekday() {
     weekday.innerText = dayWeekday + " " + currentDate;
 }
 
-showWeekday()
+showDate()
 
 function digitalClock(){
     let h = new Date().getHours();
