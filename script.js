@@ -2,6 +2,17 @@ const hours = document.getElementById("hour");
 const minutes = document.getElementById("minute");
 const seconds = document.getElementById("second");
 const ampm = document.querySelector(".ampm");
+const weekday = document.querySelector(".weekday");
+
+const weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+function showWeekday() {
+    const d = new Date();
+    let day = weekdays[d.getDay()];
+    weekday.innerText = day;
+}
+
+showWeekday()
 
 function digitalClock(){
     let h = new Date().getHours();
