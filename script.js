@@ -8,8 +8,14 @@ const weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","S
 
 function showWeekday() {
     const d = new Date();
-    let day = weekdays[d.getDay()];
-    weekday.innerText = day;
+    let dayWeekday = weekdays[d.getDay()];
+    let dayDate = d.getDate();
+    let month = d.getMonth() + 1;
+    let year = d.getFullYear();
+
+    let currentDate = `${dayDate}-${month}-${year}`;
+
+    weekday.innerText = dayWeekday + " " + currentDate;
 }
 
 showWeekday()
